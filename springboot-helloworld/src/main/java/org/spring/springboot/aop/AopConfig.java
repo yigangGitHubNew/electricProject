@@ -41,6 +41,10 @@ public class AopConfig {
         Object obj = null;
         System.err.println ("切面around before执行了");
         try {
+            Object[] agrs = thisJoinPoint.getArgs();
+            for (Object o : agrs){
+                System.out.println(o.toString());
+            }
             thisJoinPoint.proceed();
         } catch (Throwable e) {
             e.printStackTrace ();
