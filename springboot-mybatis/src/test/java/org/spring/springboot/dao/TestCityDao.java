@@ -17,22 +17,14 @@ import com.github.pagehelper.PageInfo;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class TestCityDao {
-	
+
 	@Autowired
-	private CityService cityService;
+	private CityDao cityDao;
 	
 	@Test
 	public void testFindCityList() {
-		List<City> citys = cityService.findCityList();
+		List<City> citys = cityDao.selectCityList();
 		System.out.println(citys.size());
 	}
 	
-	@Test
-	public void testGetPage() {
-		Page<City> cityPage = cityService.getCityByPage();
-		PageInfo<City> cityPages = new PageInfo<City>(cityPage);
-		System.out.println(cityPage.getResult().size());
-		System.out.println(JSON.toJSONString(cityPage));
-		System.out.println(JSON.toJSONString(cityPages));
-	}
 }
