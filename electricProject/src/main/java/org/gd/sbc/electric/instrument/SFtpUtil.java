@@ -1,15 +1,15 @@
 package org.gd.sbc.electric.instrument;
 
-import com.jcraft.jsch.*;
-import com.sun.deploy.util.StringUtils;
+import com.jcraft.jsch.Channel;
+import com.jcraft.jsch.ChannelSftp;
+import com.jcraft.jsch.JSch;
+import com.jcraft.jsch.Session;
 import org.gd.sbc.electric.constants.SftpConstant;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
-import java.util.Vector;
 
 /**
  * sftp的工具类
