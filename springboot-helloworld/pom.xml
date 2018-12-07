@@ -32,18 +32,6 @@
         <!-- java搜索引擎的相关jar -->
 		<dependency>
 		    <groupId>org.apache.lucene</groupId>
-		    <artifactId>lucene-analyzers-common</artifactId>
-		    <version>5.5.2</version>
-		</dependency>
-		
-		<dependency>
-		    <groupId>org.apache.lucene</groupId>
-		    <artifactId>lucene-core</artifactId>
-		    <version>5.5.2</version>
-		</dependency>
-		
-		<dependency>
-		    <groupId>org.apache.lucene</groupId>
 		    <artifactId>lucene-queryparser</artifactId>
 		    <version>5.5.2</version>
 		</dependency>
